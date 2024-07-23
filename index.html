@@ -23,7 +23,7 @@
             <div class="col-md-6">
                 <form>
                     <div class="form-group">
-                        <textarea class="form-control textareaInput" id="textareaInput" rows="3" placeholder="Digite seu texto" ></textarea>
+                        <textarea class="form-control textareaInput" id="textoEntrada" rows="20" placeholder="Digite seu texto" ></textarea>
                     </div>
 
                     <div class="row align-items-center">
@@ -34,27 +34,33 @@
                             <p class="mb-1">Apenas letras minúsculas e sem acento.</p>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-primary btn-block">Criptografar</button>
+                            <button type="button" class="btn btn-primary btn-block" onclick="criptografarTexto()">Criptografar</button>
                         </div>
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-outline-primary btn-block">Descriptografar</button>
+                            <button type="button" class="btn btn-outline-primary btn-block" onclick="descriptografarTexto()">Descriptografar</button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 output">
                 <form>
-                    <div class="form-group">
-                        <textarea class="form-control textareaOutput" id="textareaOutput" rows="3" placeholder="Nenhuma mensagem encontrada"></textarea>
+                    <div class="form-group ">
+                        <input class="form-control textOutput" id="textoSaida" placeholder="Nenhuma mensagem encontrada">
+                             <img src="assets/images/output.jpg" alt="">
+                        </input>
+                        
+                        <button type="button" class="btn btn-outline-primary btn-block" onclick="copiartextoSaida()">Copiar</button>
                     </div>
+                    
                 </form>
             </div>
         </div>
     </div>
-    
+
+    <script type="text/javascript" src="assets/js/criptografia.js"></script>
     
 </body>
 </html>
