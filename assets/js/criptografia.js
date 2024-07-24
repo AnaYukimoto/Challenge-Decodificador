@@ -40,5 +40,5 @@ function copiartextoSaida() {
     var textoSaida = document.getElementById('textoSaida');
     textoSaida.select();
     document.execCommand('copy');
-    alert('Texto copiado para área de transferência!');
+    
 }
