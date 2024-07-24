@@ -1,10 +1,10 @@
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <div style="flex: 1;">
-    <h2>Bem-vindo ao repositório do <strong>Challenge-Decodificador</strong>!</h2>
-    <p>Este projeto faz parte do curso "Praticando Lógica de Programação: Challenge Decodificador de Texto", através da ONE em parceria com a Alura.</p>
-  </div>
-  <img src="assets/images/badge.png" alt="Descrição da Imagem" style="width: 300px; height: auto;">
-</div>
+# Challenge-Decodificador
+
+Este projeto faz parte do curso "Praticando Lógica de Programação: Challenge Decodificador de Texto", através da Oracle Next Education (ONE) em parceria com a Alura.</p>
+
+<p align="center">
+    <img src="assets/images/badge.png" alt="Descrição da Imagem" style="width: 400px; height: auto;">
+</p>
 
 ## Descrição
 
