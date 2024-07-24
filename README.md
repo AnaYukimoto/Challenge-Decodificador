@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; justify-content: space-between;">
-  <div style="flex: 1; margin-right: 20px;">
+  <div style="flex: 1;">
     <h2>Bem-vindo ao repositório do <strong>Challenge-Decodificador</strong>!</h2>
     <p>Este projeto faz parte do curso "Praticando Lógica de Programação: Challenge Decodificador de Texto", através da ONE em parceria com a Alura.</p>
   </div>
