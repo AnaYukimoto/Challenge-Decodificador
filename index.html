@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,12 @@
 <body>
     <nav class="navbar navbart">
         <a class="navbar-brand" href="index.html">
-            <img src="assets/images/LogoAlura.png" alt="Logo da Alura">
+            <img src="assets/images/LogoAlura.png" alt="Logo da Alura" width="80px">
         </a>
     </nav>
 
     <div class="container-fluid">
-        <div class="row justify-content-center align-items-center vh-100">
+        <div class="row justify-content-center align-items-center vh-100 my-3">
             <div class="col-md-6">
                 <form>
                     <div class="form-group">
@@ -44,17 +44,22 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-2 output">
+            <div class="col-md-3 output">
                 <form>
                     <div class="form-group">
-                        <textarea class="form-control textOutput" id="textoSaida" rows="16" placeholder="Nenhuma mensagem encontrada"></textarea>
-                        <button type="button" class="btn btn-outline-primary btn-block" id="btnCopiar" onclick="copiartextoSaida()">Copiar</button>
-
+                        <textarea class="form-control textOutput" id="textoSaida" rows="16" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+                        <button type="button" class="btn btn-outline-primary btn-block d-none" id="btnCopiar" onclick="copiartextoSaida()">Copiar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <footer class="text-center text-lg-start mt-auto py-5 ">
+        <div class="container">
+            <p class="text-muted mb-0">&copy;Desenvolvido por <a href="https://github.com/AnaYukimoto">Ana Yukimoto</a></p>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="assets/js/criptografia.js"></script>
 </body>

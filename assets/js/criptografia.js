@@ -1,8 +1,5 @@
 function criptografar(texto) {
-    if (!texto.match(/^[a-z\s]+$/)) {
-        alert('Por favor, insira apenas letras minúsculas e sem acento.');
-        return '';
-    }
+    texto = texto.toLowerCase();
 
     return texto.replace(/e/g, 'enter')
                 .replace(/i/g, 'imes')
@@ -12,22 +9,30 @@ function criptografar(texto) {
 }
 
 function descriptografar(texto) {
-    if (!texto.match(/^(enter|imes|ai|ober|ufat|\s)+$/)) {
-        alert('O texto parece não estar criptografado corretamente.');
-        return '';
-    }
 
     return texto.replace(/enter/g, 'e')
                 .replace(/imes/g, 'i')
                 .replace(/ai/g, 'a')
                 .replace(/ober/g, 'o')
                 .replace(/ufat/g, 'u');
-}
+
+}  
 
 function criptografarTexto() {
     var textoEntrada = document.getElementById('textoEntrada').value;
     var textoSaida = criptografar(textoEntrada);
-    document.getElementById('textoSaida').value = textoSaida;
+    var textareaSaida = document.getElementById('textoSaida');
+    var btnCopiar = document.getElementById('btnCopiar');
+    textareaSaida.value = textoSaida;
+
+    // Ajusta a aparência do textarea com base no texto criptografado
+    if (textoSaida.trim() !== '') {
+        textareaSaida.classList.add('noBackground');
+        btnCopiar.classList.remove('d-none'); 
+    } else {
+        textareaSaida.classList.remove('noBackground');
+        btnCopiar.classList.add('d-none'); 
+    }
 }
 
 function descriptografarTexto() {
@@ -38,7 +43,17 @@ function descriptografarTexto() {
 
 function copiartextoSaida() {
     var textoSaida = document.getElementById('textoSaida');
-    textoSaida.select();
-    document.execCommand('copy');
     
+    // Tentativa de copiar usando a API moderna, se disponível
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(textoSaida.value).then(function() {
+            console.log('Texto copiado com sucesso!');
+        }).catch(function(err) {
+            console.error('Erro ao copiar o texto: ', err);
+        });
+    } else {
+        // Fallback para `document.execCommand` para navegadores mais antigos
+        textoSaida.select();
+        document.execCommand('copy');
+    }
 }
