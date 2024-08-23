@@ -17,8 +17,6 @@ O **Challenge-Decodificador** é uma aplicação web que permite codificar e dec
 ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png)![Bootstrap](https://img.icons8.com/color/50/000000/bootstrap.png)
 ![Figma](https://img.icons8.com/color/50/000000/figma.png)
 
-<video width="600" controls>
-  <source src="assets/images/demonstrativo.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/52140321-36b0-4f42-96c0-04e05236b82b
 
 O vídeo acima mostra a interface da aplicação, semelhante o design proposto no [Figma](https://www.figma.com/proto/f0TymOzlC7AsnKy0tmD69y/Alura-Challenge---Desafio-1---L%C3%B3gica-(Copy)?t=ExjlTNFps7OQLz6j-1).
